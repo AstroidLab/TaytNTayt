@@ -1,0 +1,90 @@
+﻿@model TaytNTayt.Models.Address
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Address</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NickName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NickName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.İl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.İl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.İlçe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.İlçe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mahalle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mahalle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cadde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cadde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sokak)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sokak)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApartmentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApartmentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Block)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Block)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
